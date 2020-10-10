@@ -1,23 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    
+    <script src="js/maindemo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="menu.html">
+
+    <style>
+        a {
+            text-decoration: none;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        a:hover {
+            color: brown;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: lightyellow;
+        }
+
+        .item {
+            border: none;
+            padding: 15px;
+            height: 450px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        #Home {
+           color: orangered;
+        }
+    </style>
+
+
 </head>
+
 <body>
-    
-    <div class="container">
-        <a href="BLOG/BLOG.html">blog1</a>
-        <br>
-        <a href="PRODUCT/Product 1sp.html">Product 1sp</a>
+    <div class="jumbotron">
+        <a href="#" id="Home">Home</a>
+        <a href="#" id="Menu">Menu</a>
+        <a href="#" id="Cart">Order</a>
+        <a href="#" id="About">Contact</a>
+        <a href="#" id="blog">Blog</a>
+        <a href="#" id="oil">hide</a>
+        <a href="#" id="show">show</a>
+
+
+
     </div>
     
+
+    <div id="main-content"></div>
+
+    
+    <div class="panel panel-footer">
+        <h4 style="text-align: center">Copyright ORGANIC STAR &COPY; 2020, FPT-Aptech HCMC</h4>
+    </div>
+
+
 </body>
+
 </html>

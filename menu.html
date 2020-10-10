@@ -1,0 +1,102 @@
+
+<link rel="stylesheet" href="../cart-js/js/maindemo.js">
+<style>
+    .item {
+        border: bisque thin solid;
+        padding: 15px;
+        height: 450px;
+        text-align: center;
+        margin-top: 15px;
+        animation: movebottom 2s ease-out;
+    }
+
+    @keyframes movebottom {
+        0% {
+            opacity: 0;
+            transform: translatey(30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translatey(0)
+        }
+    }
+    #Menu{
+        color: orangered;
+    }
+  
+
+    
+</style>
+<div class="col-md-3">
+    <div class="jumbotron"  >
+        <h2>Lấy giá trị của checkbox bằng Javascript</h2>
+        <p>Hãy viết chương trình khi click vào button thì in ra danh sách sở thích mà người dùng đã chọn.</p>
+
+        <input type="checkbox" name="hobby" value="Đi chơi" /> <label>Đi chơi</label> <br />
+        <input type="checkbox" name="hobby" value="Đi du lịch" /> <label>Đi du lịch</label> <br />
+        <input type="checkbox" name="hobby" value="Đi ăn" /> <label>Đi ăn</label> <br />
+        <input type="checkbox" name="hobby" value="Đi siêu thị" /> <label>Đi siêu thị</label> <br />
+        <input type="checkbox" name="hobby" value="học lập trình" /> <label>học lập trình</label> <br />
+        <input type="checkbox" name="hobby" value="Lướt freetuts.net" /> <label>Lướt freetuts.net</label>
+        <br /> <br />
+
+        <input type="button" id="btn" value="Xem kết quả" />
+        
+    </div>
+
+    
+<body>
+    <div class="jumbotron">
+        
+        <a href="#" id="oil">hide</a>
+    </div>
+</div>
+
+
+<div class="container col-md-9">
+    <div class="row " id="data-product">
+    </div>
+</div>
+<!-- modal -->
+<div class="modal fade" id="modal-id">
+    <div class="modal-dialog" style="width: 80%;">
+        <div class="modal-content" style="height: 550px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script language="javascript">
+    document.getElementById('btn').onclick = function () {
+        // Khai báo tham số
+        var checkbox = document.getElementsByName('hobby');
+        var result = "";
+
+        // Lặp qua từng checkbox để lấy giá trị
+        for (var i = 0; i < checkbox.length; i++) {
+            if (checkbox[i].checked === true) {
+                result += ' [' + checkbox[i].value + ']';
+            }
+        }
+
+        // In ra kết quả
+        alert("Sở thích là: " + result);
+    };
+
+ //================
+// load data ...
+//================
+
+
+
+
+</script>
